@@ -199,6 +199,31 @@
   .prem-uhdertitle {
     width: 270px;
   }
+  .prem-uhdertitle::before {
+    display: block;
+    content: " ";
+    height: 120px;
+    /*outline: 1px solid red;*/
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+  }
+
+  .icon-antenna::before {
+    background-image: url(../images/icons/antenna.svg);
+  }
+  .icon-clock::before {
+    background-image: url(../images/icons/clock.svg);
+  }
+  .icon-diagram::before {
+    background-image: url(../images/icons/diagram.svg);
+  }
+  .icon-astronaut::before {
+    background-image: url(../images/icons/astronaut.svg);
+  }
+
   .prem-title {
     font-weight: 700;
     font-size: 14px;
@@ -372,6 +397,7 @@
     gap: 10px;
   }
   .socials-link {
+    margin-top: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -407,15 +433,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid var(--grey-color);
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
     background-color: var(--background-color);
     color: var(--grey-color);
   }
   .klient-icon {
     fill: currentColor;
-    border: 1px solid var(--grey-color);
-    border-radius: 4px;
-    width: 170px;
-    height: 92px;
+    
   }
   .klient-link:hover .klient-icon,
   .klient-link:focus .klient-icon {
@@ -425,4 +452,5 @@
 
   .header-icon {
     fill: currentColor;
+    
   }
