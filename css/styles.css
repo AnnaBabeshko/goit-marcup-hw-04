@@ -8,6 +8,7 @@
     --discript-background-color: #f5f4fa;
     --dark-background-color: #2f303a;
     --port-background-color: #e5e5e5;
+    --grey-color: #AFB1B8;
   }
   body {
     font-family: "Roboto", sans-serif;
@@ -46,7 +47,7 @@
     padding-left: 15px;
     margin-left: auto;
     margin-right: auto;
-    /*outline: 2px solid red;*/
+    outline: 2px solid red;
   }
   .logo {
     font-family: none;
@@ -361,7 +362,7 @@
     letter-spacing: 0.03em;
     color: var(--title-text-color);
   }
-  /*----------------ICONS--------------*/
+  
   .socials {
     display: flex;
     justify-content: center;
@@ -375,13 +376,48 @@
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background-color: var(--background-color);   
-    
+    background-color: var(--background-color);
+    color: var(--grey-color);
+    /*outline: 2px solid red;
+    outline-offset: -2px;*/
   }
-  .socials-icon {
-    fill: #AFB1B8;
+    .socials-icon {
+    fill: currentColor;
   }
-  .socials-link:hover .socials-icon,
-  .socials-link:focus .socials-icon{
-    fill: #2196f3;
+  .socials-link:hover, .socials-icon 
+  .socials-link:focus .socials-icon {
+    background-color: var(--accent-color);
+    color: var(--background-color);
+  }
+  
+
+  .klient-container {
+    display: flex;
+    gap: 30px;
+  }
+  .klient-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .klient-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    background-color: var(--background-color);
+    color: var(--grey-color);
+    border: 1px solid var(--grey-color);
+    border-radius: 4px;
+
+  }
+  .klient-icon {
+    fill: currentColor;
+  }
+  .klient-link:hover .klient-icon,
+  .klient-link:focus .klient-icon {
+    fill: var(--accent-color);
+    border: 1px solid  var(--accent-color);
   }
