@@ -114,8 +114,9 @@
   }
   .site-descr {
     display: flex;
-    gap: 50px;
+    gap: 30px;
     margin-left: auto;
+    align-items: center;
   }
   .descr-list {
     font-weight: 500;
@@ -123,6 +124,7 @@
     letter-spacing: 0.02em;
     color: var(--title-text-color);
     text-align: center;
+    gap: 10px;
   }
   .descr-list:hover,
   .descr-list:focus {
