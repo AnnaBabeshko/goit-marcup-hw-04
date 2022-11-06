@@ -130,7 +130,10 @@
   .descr-list:focus {
     color: var(--accent-color);
   }
-  /*-------------------------------HIRO------------------*/
+  .header-icon {
+    fill: currentColor;
+  }
+ /*-------------------------------HIRO------------------*/
   .hiro {
     padding-top: 200px;
     padding-bottom: 200px;
@@ -207,7 +210,7 @@
     border-radius: 4px;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: #F5F4FA;
+    background-color: var(--discript-background-color);
     margin-bottom: 30px;
   }
 
@@ -409,7 +412,7 @@
     /*outline: 2px solid red;
     outline-offset: -2px;*/
   }
-    .socials-icon {
+  .socials-icon {
     fill: currentColor;
   }
   .socials-link:hover, .socials-icon 
@@ -440,17 +443,17 @@
     background-color: var(--background-color);
     color: var(--grey-color);
   }
-  .klient-icon {
-    fill: currentColor;
-    
-  }
-  .klient-link:hover .klient-icon,
-  .klient-link:focus .klient-icon {
-    fill: var(--accent-color);
+  .klient-link:hover,
+  .klient-link:focus {
     border: 1px solid  var(--accent-color);
   }
-
-  .header-icon {
+  
+  .klient-icon {
     fill: currentColor;
-    
   }
+  .klient-icon:hover,
+  .klient-icon:focus {
+    fill: var(--accent-color);
+  }
+
+  
