@@ -405,19 +405,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
-    height: 92px;
     background-color: var(--background-color);
     color: var(--grey-color);
-    border: 1px solid var(--grey-color);
-    border-radius: 4px;
-
   }
   .klient-icon {
     fill: currentColor;
+    border: 1px solid var(--grey-color);
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
   }
   .klient-link:hover .klient-icon,
   .klient-link:focus .klient-icon {
     fill: var(--accent-color);
     border: 1px solid  var(--accent-color);
+  }
+
+  .header-icon {
+    fill: currentColor;
   }
