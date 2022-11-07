@@ -404,11 +404,7 @@
   }
   .port-list-item {
     width: 370px;
-    /*flex-basis: calc((100% - 60px) / 3);
-    margin-right: 30px;
-    margin-bottom: 30px;*/
   }
-  
   .port-link {
     display: block;
   }
@@ -420,7 +416,6 @@
     padding: 20px 24px;
     /*outline: 2px solid green;*/
     border: 1px solid #EEEEEE;
-   
   }
   .port-title {
     font-weight: 700;
