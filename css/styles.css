@@ -124,7 +124,9 @@
     letter-spacing: 0.02em;
     color: var(--title-text-color);
     text-align: center;
+    display: flex;
     gap: 10px;
+    align-items: center;
   }
   .descr-list:hover,
   .descr-list:focus {
@@ -137,11 +139,11 @@
   .hiro {
     padding-top: 200px;
     padding-bottom: 200px;
-    background: rgba(47, 48, 58, 0.4);
-    background-image: url(../images/box4.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/box4.jpg);
     background-repeat: no-repeat;
     background-position: center;
     max-width: 1600px;
+    height: 600px;
     margin: 0 auto;
   }
   .hiro-item {
@@ -342,14 +344,10 @@
   }
   .para {
     display: flex;
-    align-items: center;
+    align-items: baseline;
   }
   .foot {
     margin-right: 70px;
-  }
-  .foot-soc {
-    width: 206px;
-    gap: 10px;
   }
   .foot-color-link {
     display: flex;
@@ -406,16 +404,23 @@
   }
   .port-list-item {
     width: 370px;
+    /*flex-basis: calc((100% - 60px) / 3);
+    margin-right: 30px;
+    margin-bottom: 30px;*/
   }
-  .port-list-item:hover,
-  .port-list-item:focus {
-    border: 1px solid #EEEEEE;
+  
+  .port-link {
+    display: block;
+  }
+  .port-link:hover,
+  .port-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   }
   .cart-cont {
     padding: 20px 24px;
     /*outline: 2px solid green;*/
     border: 1px solid #EEEEEE;
+   
   }
   .port-title {
     font-weight: 700;
@@ -423,6 +428,7 @@
     line-height: 2;
     letter-spacing: 0.06em;
     margin-bottom: 4px;
+    color: var(--primari-text-color);
   }
   .port-text {
     font-size: 16px;
@@ -472,23 +478,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid var(--grey-color);
+    border: 1px solid currentColor;
     border-radius: 4px;
     width: 170px;
     height: 92px;
-    background-color: var(--background-color);
     color: var(--grey-color);
   }
   .klient-link:hover,
   .klient-link:focus {
-    border: 1px solid  var(--accent-color);
+    color: var(--accent-color);
   }
   .klient-icon {
     fill: currentColor;
   }
-  .klient-icon:hover,
-  .klient-icon:focus {
-    fill: var(--accent-color);
-  }
+ 
 
   
